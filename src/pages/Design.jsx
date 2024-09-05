@@ -1,17 +1,22 @@
 import './Design.css';
 import Navbar from '../Components/Navbar';
 
+//component buttona do kopiowania
 const copyButton = (onClick) => (
   <buttton className="copyBtn" onClick={onClick}>Copy</buttton>
 )
 
-function copyToClipboard (cssParam, type) {
+//funkcja do kopiowania stylu danego buttona
+function copyToClipboardButton (cssParam, type) {
   navigator.clipboard.writeText(cssParam).then(alert(`You just copied ${type} design!`));
 }
 
-const classicButtonDesign = 'test';
+
+//classic button design
+const classicButtonCopy = 'test';
 
 function Design () {
+  
   return (
     <>
         <Navbar />
@@ -20,7 +25,7 @@ function Design () {
             <div className="classic-button">
               <p>✅ classic button</p>
               <button className='classic-buttonBtn'>Button</button>
-              {copyButton(() => {copyToClipboard(classicButtonDesign, 'button')})}
+              {copyButton(() => {copyToClipboardButton(classicButtonCopy, 'button')})}
             </div>
           </div>
         </div>
