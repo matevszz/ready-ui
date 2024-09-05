@@ -19,7 +19,7 @@ function Design () {
           <div className="buttons">
             <div className="classic-button">
               <p>✅ classic button</p>
-              <button className='classic-buttonBtn'></button>
+              <button className='classic-buttonBtn'>Button</button>
               {copyButton(() => {copyToClipboard(classicButtonDesign, 'button')})}
             </div>
           </div>
