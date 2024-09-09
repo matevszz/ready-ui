@@ -27,6 +27,11 @@ function Design () {
               <button className='classic-buttonBtn'>Button</button>
               {copyButton(() => {copyToClipboardButton(classicButtonCopy, 'button')})}
             </div>
+            <div className="retro-button">
+              <p>📺 retro button</p>
+              <button className='retro-buttonBtn'>Button</button>
+              {copyButton(() => {copyToClipboardButton(classicButtonCopy, 'button')})}
+            </div>
           </div>
         </div>
     </>

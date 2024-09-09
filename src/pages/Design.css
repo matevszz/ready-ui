@@ -12,6 +12,9 @@
 
 .buttons {
     margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .classic-button {
@@ -50,4 +53,29 @@
 
 .copyBtn:hover {
     text-decoration: underline;
+}
+
+.retro-button {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.retro-buttonBtn {
+    font-size: 24px;
+    padding: 24px 48px;
+    background: rgba(0, 0, 0, .05);
+    border: 1px solid #212121;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px black;
+    font-weight: 400;
+    transition: all .1s;
+}
+
+.retro-buttonBtn:hover {
+    box-shadow: 10px 10px 0px black;
+    transform: translateY(-5px);
+    font-weight: 600;
+    border: 2px solid #212121;
 }
